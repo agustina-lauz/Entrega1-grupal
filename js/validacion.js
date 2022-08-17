@@ -26,6 +26,16 @@ function validaPass(){
     return (pas1 === pas2);
 }
 
+function validaCaracteresPas(){
+    let pas1 = document.getElementsById('password1').value.length > 5
+    return true;
+}
+
+
+function check() {
+    document.getElementById("terminos").checked = true;
+}
+
 
 
  form.addEventListener("submit", e =>
