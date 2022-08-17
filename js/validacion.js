@@ -6,28 +6,36 @@ function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
 }
 
-/*function verificarPasswords() {
+let nombre = document.getElementById("nombre")
+let apellido = document.getElementById("apellido")
+let pass1 = document.getElementById("password1")
+let pass2 = document.getElementById("password2")
+let terminos = document.getElementById("terminos")
+let fromGroup = document.getElementsByClassName("datos")
 
-    pass1 = document.getElementById('password1');
-    pass2 = document.getElementById('password2');
 
-    if (pass1.value != pass2.value) {
+function validaDatos(){
+    let fromGroup = document.getElementsByClassName("datos").value.length > 0
+    return true;
+}
 
-        // Si las constraseñas no coinciden mostramos un mensaje 
-        document.getElementById("alert-danger").classList.add("show");
 
-        return false;
-    }
-    
-    else {
+function validaPass(){
+    let pas1 = document.getElementById('password1').value;
+    let pas2 = document.getElementById('password2').value;
+    return (pas1 === pas2);
+}
 
-        // Mostramos un mensaje mencionando que las Contraseñas coinciden 
-        document.getElementById("alert-success").classList.add("show");
+
+
+ form.addEventListener("submit", e =>
+    {
+        if (pass1.value.length < 6) {
+            showAlertError;
+        } else {
+            showAlertSuccess;
+        }
 
        
-
-       
-        return true;
-    }
-
-} */
+}
+ )
